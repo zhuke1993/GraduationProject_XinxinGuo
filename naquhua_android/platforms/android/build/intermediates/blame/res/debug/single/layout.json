@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_custom_view_done_discard.xml",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\layout\\actionbar_custom_view_done_discard.xml"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\multiselectorgrid.xml",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\layout\\multiselectorgrid.xml"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_done_button.xml",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\layout\\actionbar_done_button.xml"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_discard_button.xml",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\layout\\actionbar_discard_button.xml"
+    }
+]

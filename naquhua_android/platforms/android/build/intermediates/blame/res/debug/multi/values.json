@@ -1,0 +1,199 @@
+[
+    {
+        "outputFile": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 155,
+                        "endColumn": 63,
+                        "endOffset": 214
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 40,
+                    "endOffset": 155
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 40,
+                        "endOffset": 91
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 160,
+                    "endColumn": 42,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\multiimagechooser_strings_en.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 409,
+                        "endColumn": 42,
+                        "endOffset": 447
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 35,
+                    "endOffset": 234
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\multiimagechooser_strings_en.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 35,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 239,
+                    "endColumn": 117,
+                    "endOffset": 352
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\multiimagechooser_strings_en.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 198,
+                        "endColumn": 117,
+                        "endOffset": 311
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 357,
+                    "endColumn": 77,
+                    "endOffset": 430
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\multiimagechooser_strings_en.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 119,
+                        "endColumn": 77,
+                        "endOffset": 192
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 435,
+                    "endColumn": 58,
+                    "endOffset": 489
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 96,
+                        "endColumn": 58,
+                        "endOffset": 150
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 494,
+                    "endColumn": 60,
+                    "endOffset": 550
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\multiimagechooser_strings_en.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 60,
+                        "endOffset": 113
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 555,
+                    "endColumn": 90,
+                    "endOffset": 641
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\multiimagechooser_strings_en.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 317,
+                        "endColumn": 90,
+                        "endOffset": 403
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 646,
+                    "endLine": 12,
+                    "endColumn": 12,
+                    "endOffset": 715
+                },
+                "from": {
+                    "file": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\values\\themes.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endLine": 3,
+                        "endColumn": 12,
+                        "endOffset": 127
+                    }
+                }
+            }
+        ]
+    }
+]

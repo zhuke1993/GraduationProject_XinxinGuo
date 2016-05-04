@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>注册</title>
+<!-- For-Mobile-Apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Simple User Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, SonyErricsson, Motorola Web Design" />
+<!-- //For-Mobile-Apps -->
+<!-- Style --> <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script src = 'js/public.js'></script>
+<script src = 'js/register.js'></script>
+</head>
+<body>
+<div class="container">
+<h1>拿去花</h1>
+     <div class="contact-form">
+	 <div class="signin">
+	     <p>邮箱：</p><input id = 'email' name='email' type="text" class="user" />
+		 <p>密码：</p><input id = 'password' name = 'password' type="password" class="pass" />
+         <p>重复密码：</p><input id = 'repassword' name='repassword' type="password" class="user" />
+         <p>电话：</p><input id="phone" name = 'phone' type="text" class="user"/>
+         <button class="small" onclick="getValidateCode()">获取验证码</button><input id = 'code' name = 'code' type="text" class="user" />
+         <input type="button" onclick = 'register()' value="注册" />					
+		 <p><a href="#">忘记密码</a></p>  
+
+    <div class="last displaynone" id="errordiv">
+        <div style="color:red">
+            <p id="error_message"></p>
+        </div>
+    </div>
+	</div>
+	</div> 
+</div>
+<div class="footer">
+     <p>Copyright &copy; 2016 郭欣欣@重庆邮电大学. All Rights Reserved</a></p>
+</div>
+<script src = 'js/jquery.min.js'></script>
+
+
+</body>
+</html>

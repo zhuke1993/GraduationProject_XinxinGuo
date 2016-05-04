@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_discard_dark.png",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\drawable-mdpi\\ic_action_discard_dark.png"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_done_dark.png",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\drawable-mdpi\\ic_action_done_dark.png"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_done_light.png",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\drawable-mdpi\\ic_action_done_light.png"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon.png",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_discard_light.png",
+        "source": "D:\\Users\\Administrator\\Documents\\GraduationProject_XinxinGuo\\naquhua_android\\platforms\\android\\res\\drawable-mdpi\\ic_action_discard_light.png"
+    }
+]

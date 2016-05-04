@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用MethodInvokingJobDetailFactoryBean，任务类可以不实现Job接口，通过targetMethod指定调用方法-->
+    <bean id="overtimeAgreementSchedule" class="com.gxx.nqh.jobschedule.OvertimeAgreementSchedule">
+        <property name="hibernateTemplate" ref="hibernateTemplate"/>
+        <property name="mailService" ref="mailServiceImpl"/>
+    </bean>
+
+    <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="group" value="agreement"/>
+        <property name="name" value="overtime_agreement_schedule"/>
+        <!--false表示等上一个任务执行完后再开启新的任务-->
+        <property name="concurrent" value="true"/>
+        <property name="targetObject">
+            <ref bean="overtimeAgreementSchedule"/>
+        </property>
+        <property name="targetMethod">
+            <value>execute</value>
+        </property>
+    </bean>
+
+    <!--  调度触发器 -->
+    <bean id="myTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="daily 1am"/>
+        <property name="jobDetail">
+            <ref bean="jobDetail"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 0 1 * * ?</value>
+        </property>
+    </bean>
+
+    <!-- 调度工厂 -->
+    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="myTrigger"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>

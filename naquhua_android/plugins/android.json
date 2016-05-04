@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.gxx.naquhua"
+        },
+        "cordova-plugin-zip": {
+            "PACKAGE_NAME": "com.gxx.naquhua"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.gxx.naquhua"
+        },
+        "cordova-plugin-imagepicker": {
+            "PACKAGE_NAME": "com.gxx.naquhua"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.gxx.naquhua"
+        }
+    }
+}
