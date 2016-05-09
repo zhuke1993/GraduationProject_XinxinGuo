@@ -11,7 +11,8 @@ $.ajax({
 			var json = JSON.parse(msg.msg);
 
 			$('#app_content').append("<p style=\"font-weight: bold; font-size: 20px;\">借款详情</p>\n" +
-                "        <span>借款描述：</span><span>"+json[0].loanTitle+"</span><br><br>\n" +
+                "        <span>借款标题：</span><span>"+json[0].loanTitle+"</span><br><br>\n" +
+                "        <span>借款描述：</span><span>"+json[0].description+"</span><br><br>\n" +
                 "        <span>金额：</span><span id = \"amount\">"+json[0].amount+"</span><span>元</span><br><br>\n" +
                 "        <span>还款期限：</span><span>"+json[0].repaymentLimit+"天</span><br><br>\n" +
                 "        <span>年利率：</span><span>"+json[0].rateMonthly+"%</span><br><br>\n" +

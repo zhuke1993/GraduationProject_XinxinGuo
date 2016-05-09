@@ -4,6 +4,7 @@ package com.gxx.nqh.dto;
  * Created by ZHUKE on 2016/4/8.
  */
 public class InvestDto {
+    private Long agreementRequestId;
     private Long agreementId;
     private String loanTitle;
     private String amount;
@@ -15,6 +16,14 @@ public class InvestDto {
 
     public void setAgreementId(Long agreementId) {
         this.agreementId = agreementId;
+    }
+
+    public Long getAgreementRequestId() {
+        return agreementRequestId;
+    }
+
+    public void setAgreementRequestId(Long agreementRequestId) {
+        this.agreementRequestId = agreementRequestId;
     }
 
     public String getLoanTitle() {
@@ -41,7 +50,8 @@ public class InvestDto {
         this.date = date;
     }
 
-    public InvestDto(Long agreementId, String loanTitle, String amount, String date) {
+    public InvestDto(Long agreementRequestId, Long agreementId, String loanTitle, String amount, String date) {
+        this.agreementRequestId = agreementRequestId;
         this.agreementId = agreementId;
         this.loanTitle = loanTitle;
         this.amount = amount;

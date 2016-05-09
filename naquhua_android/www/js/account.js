@@ -26,7 +26,8 @@ $.ajax({
 						$('#app_content').append("<span>银行卡号：</span>"+json.bankCardNo+"<br>"
 													+"<span>账户余额:</span>"+json.amount+"<br><br><hr>"
 													+"<button onclick=\"recharge()\">充值</button>&nbsp&nbsp<input style=\"width:45%\" name=\"rechargeAmount\" id=\"rechargeAmount\" type = \"text\"/><br>"
-													+"<button onclick=\"withdraw()\">提现</button>&nbsp&nbsp<input style=\"width:45%\" name=\"withdrawAmount\" id=\"withdrawAmount\" type = \"text\"/><br>");
+													+"<button onclick=\"withdraw()\">提现</button>&nbsp&nbsp<input style=\"width:45%\" name=\"withdrawAmount\" id=\"withdrawAmount\" type = \"text\"/><br>"
+													+"<p style='color:red;' id='error_message'></p>");
 					}else if (msg.code == '401' || msg.code == '403') {
 			            alert(msg.msg);
 			            window.location.href = 'login.html';
@@ -80,6 +81,12 @@ function bindCard(){
 
 
 function recharge(){
+	rechargeAmount = $("#rechargeAmount").val();
+	if(!isNum(rechargeAmount)){
+		$("#error_message").html("充值金额格式错误");
+		return;
+	}
+	
 	$.ajax({
 		url: server_host+"/transaction/recharge",
 		type:"POST",
@@ -101,6 +108,13 @@ function recharge(){
 
 
 function withdraw(){
+
+	withdrawAmount = $("#withdrawAmount").val();
+	if(!isNum(withdrawAmount)){
+		$("#error_message").html("提现金额格式错误");
+		return;
+	}
+
 	$.ajax({
 		url: server_host+"/transaction/withdraw",
 		type:"POST",

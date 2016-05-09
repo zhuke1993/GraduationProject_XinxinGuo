@@ -220,6 +220,7 @@ public class AgreementServiceImpl implements AgreementService, ApplicationContex
             AgreementRequest agreementRequest = i.next();
             Agreement agreement = hibernateTemplate.load(Agreement.class, agreementRequest.getAgreementId());
             investDtos.add(new InvestDto(agreementRequest.getId(),
+                    agreement.getId(),
                     agreement.getLoanTitle(),
                     agreementRequest.getAmount().toString(),
                     DateFormatUtil.formatDate(agreementRequest.getCreatedOn(), null)));

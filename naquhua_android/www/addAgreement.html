@@ -36,10 +36,11 @@
     <div class="app_content" id = 'app_content'>
          <span>借款标题：</span><input type="text" id ='loanTitle' name = 'loanTitle'><br>
         <span>借款原因：</span><input type="text" id ='loadFor' name = 'loadFor'><br>
-        <span>借款金额：</span><input type="text" id ='amount' name = 'amount'><br>
-        <span>借款期限：</span><input type="text" id ='repaymentLimit' name = 'repaymentLimit'><br>
-        <span>月利率：</span><input type="text" id ='rateMonthly' name = 'rateMonthly'><br>
+        <span>借款金额(元)：</span><input type="text" id ='amount' name = 'amount'><br>
+        <span>借款期限(天)：</span><input type="text" id ='repaymentLimit' name = 'repaymentLimit'><br>
+        <span>月利率(%)：</span><input type="text" id ='rateMonthly' name = 'rateMonthly'><br>
         <span>详细描述：</span><textarea id ='description' name = 'description'></textarea>
+        <p style="color: red; font-size: 10px" id="error_message"></p>
         <button style="width: 90%;" onclick="addAgreement();">确认借款</a></button><br><br><br><br><br><br><br>
     </div>
 
