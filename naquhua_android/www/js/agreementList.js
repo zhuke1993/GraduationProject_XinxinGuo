@@ -22,6 +22,7 @@ $.ajax({
                 "\n" +
                 "            <div style=\"float:left; width: 98%; margin-left: 10px; margin-top: 6px;\">\n" +
                 "                <span style=\"font-size: 16px; font-family: Cabin-Regular; font; font-weight: bold; color: #878F8D; left: 5px; float: left;\">"+json[i].schoolName+"</span>\n" +
+				"                <span style=\"font-size: 16px; font-family: Cabin-Regular; font; font-weight: bold; color: red; left: 5px; float: left;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+json[i].creditScoreStr+"</span>\n" +
                 "            </div>\n" +
                 "\n" +
                 "            <div style=\"float:left; margin-left: 10px; width: 30%; margin-top: 6px;\">\n" +

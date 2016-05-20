@@ -3,6 +3,7 @@ package com.gxx.nqh.jobschedule;
 import com.gxx.nqh.entity.Agreement;
 import com.gxx.nqh.entity.UserInfo;
 import com.gxx.nqh.enumtype.AgreementStatus;
+import com.gxx.nqh.service.AgreementService;
 import com.gxx.nqh.service.MailService;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -23,7 +24,7 @@ public class OvertimeAgreementSchedule {
 
     private HibernateTemplate hibernateTemplate;
 
-    private MailService mailService;
+    private AgreementService agreementService;
 
     private Logger logger = LogManager.getLogger(OvertimeAgreementSchedule.class);
 
@@ -35,10 +36,19 @@ public class OvertimeAgreementSchedule {
             if (agreement.getStatus().equals(AgreementStatus.IN_REPAYMENT.getValue()) ||
                     (isOverTime(agreement.getCreatedOn(), agreement.getRepaymentLimit())
                             && agreement.getStatus().equals(AgreementStatus.IN_RAISING.getValue()))) {
-                UserInfo userInfo = hibernateTemplate.load(UserInfo.class, agreement.getUserId());
+                try {
+                    agreementService.repayment(agreement);
+                    UserInfo userInfo = hibernateTemplate.get(UserInfo.class, agreement.getUserId());
+                    userInfo.setCreditScore(userInfo.getCreditScore() + 10);
+                    hibernateTemplate.update(userInfo);
 
-
-
+                } catch (Exception e) {
+                    UserInfo userInfo = hibernateTemplate.get(UserInfo.class, agreement.getUserId());
+                    userInfo.setCreditScore(userInfo.getCreditScore() - 20);
+                    hibernateTemplate.update(userInfo);
+                    logger.info("还款失败，信用-20" + userInfo.getRealname());
+                    e.printStackTrace();
+                }
             }
         }
         logger.info("定时任务执行成功");
@@ -55,7 +65,7 @@ public class OvertimeAgreementSchedule {
         this.hibernateTemplate = hibernateTemplate;
     }
 
-    public void setMailService(MailService mailService) {
-        this.mailService = mailService;
+    public void setAgreementService(AgreementService agreementService) {
+        this.agreementService = agreementService;
     }
 }

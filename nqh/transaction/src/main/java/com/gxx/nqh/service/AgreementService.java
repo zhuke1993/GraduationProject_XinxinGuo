@@ -32,4 +32,6 @@ public interface AgreementService {
     SystemReportDto getSystemReport();
 
     ArrayList<LoanDto> getLoanList(String status);
+
+    void repayment(Agreement agreement);
 }

@@ -23,6 +23,7 @@ $.ajax({
                 "        <span>姓名:</span><span>"+json[0].loanUserName+"</span><br><br>\n" +
                 "        <span>学校:</span><span>"+json[0].schoolName+"</span><br><br>\n" +
                 "        <span>地址:</span><span>"+json[0].address+"</span><br><br>\n" +
+				"        <span>信用等级:</span><span style='color:red;'>"+json[0].creditScoreStr+"</span><br><br>\n" +
                 "\n" +
                 "        <br>\n" +
                 "\n" +/*

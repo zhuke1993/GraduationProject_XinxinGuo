@@ -6,7 +6,7 @@
     <!-- 使用MethodInvokingJobDetailFactoryBean，任务类可以不实现Job接口，通过targetMethod指定调用方法-->
     <bean id="overtimeAgreementSchedule" class="com.gxx.nqh.jobschedule.OvertimeAgreementSchedule">
         <property name="hibernateTemplate" ref="hibernateTemplate"/>
-        <property name="mailService" ref="mailServiceImpl"/>
+        <property name="agreementService" ref="agreementServiceImpl"/>
     </bean>
 
     <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">

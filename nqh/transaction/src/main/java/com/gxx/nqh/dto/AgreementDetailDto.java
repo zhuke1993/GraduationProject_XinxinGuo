@@ -25,6 +25,25 @@ public class AgreementDetailDto {
     private int loanTimes;
     private int badLoanTimes;
 
+    private int creditScore;
+    private String creditScoreStr;
+
+    public int getCreditScore() {
+        return creditScore;
+    }
+
+    public void setCreditScore(int creditScore) {
+        this.creditScore = creditScore;
+    }
+
+    public String getCreditScoreStr() {
+        return creditScoreStr;
+    }
+
+    public void setCreditScoreStr(String creditScoreStr) {
+        this.creditScoreStr = creditScoreStr;
+    }
+
     //private ArrayList<FileURL> files;
 
     public BigDecimal getRaisedAmount() {

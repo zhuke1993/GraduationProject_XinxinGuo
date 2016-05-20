@@ -11,6 +11,7 @@ import com.gxx.nqh.service.AgreementService;
 import com.gxx.nqh.service.CommunicationService;
 import com.gxx.nqh.service.MailService;
 import com.gxx.nqh.service.UserInfoService;
+import com.gxx.nqh.util.CreditScoreUtil;
 import com.gxx.nqh.util.DateFormatUtil;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -75,7 +76,8 @@ public class AgreementServiceImpl implements AgreementService, ApplicationContex
                 "\tag.rate_monthly,\n" +
                 "\tag.repayment_limit,\n" +
                 "\tag.amount,\n" +
-                "\tag. STATUS\n" +
+                "\tag. STATUS,\n" +
+                "\tui.credit_score\n" +
                 "FROM\n" +
                 "\tAgreement ag\n" +
                 "LEFT JOIN user_info ui ON ui.id = ag.user_id\n" +
@@ -93,6 +95,11 @@ public class AgreementServiceImpl implements AgreementService, ApplicationContex
                 agreementSummaryDto.setRepaymentLimit(resultSet.getInt("repayment_limit"));
                 agreementSummaryDto.setSchoolName(resultSet.getString("school_name"));
                 agreementSummaryDto.setStatus(resultSet.getString("status"));
+
+                int creditScore = resultSet.getInt("credit_score");
+                agreementSummaryDto.setCreditScore(creditScore);
+                agreementSummaryDto.setCreditScoreStr(CreditScoreUtil.getLevel(creditScore));
+
                 agreementSummaryDtoList.add(agreementSummaryDto);
             }
         });
@@ -110,7 +117,8 @@ public class AgreementServiceImpl implements AgreementService, ApplicationContex
                 "\tag. STATUS,\n" +
                 "\tag.loan_for,\n" +
                 "\tag.description,\n" +
-                "\tui.add_detail\n" +
+                "\tui.add_detail,\n" +
+                "\tui.credit_score\n" +
                 "FROM\n" +
                 "\tAgreement ag\n" +
                 "LEFT JOIN user_info ui ON ui.id = ag.user_id\n" +
@@ -132,6 +140,11 @@ public class AgreementServiceImpl implements AgreementService, ApplicationContex
                 agreemenDetailDto.setAddress(resultSet.getString("add_detail"));
                 agreemenDetailDto.setRaisedAmount(resultSet.getBigDecimal("raised_amount"));
                 agreemenDetailDto.setRaisedLimitationAmount(resultSet.getBigDecimal("raised_limitation"));
+
+                int creditScore = resultSet.getInt("credit_score");
+                agreemenDetailDto.setCreditScore(creditScore);
+                agreemenDetailDto.setCreditScoreStr(CreditScoreUtil.getLevel(creditScore));
+
                 agreementDetailDtoList.add(agreemenDetailDto);
             }
         });
@@ -248,7 +261,6 @@ public class AgreementServiceImpl implements AgreementService, ApplicationContex
                     + "已经处于到期还款状态，请尽快登陆拿去花平台进行充值，系统将在余额充足的情况下自动进行还款动作。谢谢您的配合和支持。");
             communicationService.sendConnunication(communication);
             throw new NQHException("余额不足,还款失败。AgreementId = " + agreement.getId());
-
         } else {
             //还款金额计算规则：(月利率/100+1)*(借款天数/30）[向上取整]*已筹集金额
             BigDecimal repaymentAmount = (new BigDecimal(1).add(agreement.getRateMonthly().divide(new BigDecimal(100)))).multiply(new BigDecimal(Math.ceil(agreement.getRepaymentLimit() / 30))).multiply(agreement.getRaisedAmount());

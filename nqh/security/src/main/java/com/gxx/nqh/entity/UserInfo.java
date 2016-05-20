@@ -43,8 +43,10 @@ public class UserInfo {
      */
     @Column(name = "add_detail")
     private String addDetail;
+
     @Column(name = "school_name")
     private String schoolName;
+
     /**
      * 0-待通过资质审核
      * 1-通过资质审核
@@ -65,9 +67,11 @@ public class UserInfo {
     private String photoURL;
     /**
      * 信用评分
+     * 借款成功还款一次+10分，逾期还款一次-20分
      */
     @Column(name = "credit_score", columnDefinition = "int default 0")
     private int creditScore;
+
     @Column
     private String guid;
 
