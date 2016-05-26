@@ -2,7 +2,7 @@ package com.gxx.nqh.dto;
 
 /**
  * 贷款资质审核页面dto
- * Created by ZHUKE on 2016/4/8.
+ * Created by GXX on 2016/4/8.
  */
 public class ProfileDto {
     private int isAvailable;

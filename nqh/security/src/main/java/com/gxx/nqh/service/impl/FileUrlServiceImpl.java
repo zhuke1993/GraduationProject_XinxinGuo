@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by ZHUKE on 2016/4/8.
+ * Created by GXX on 2016/4/8.
  */
 @Service
 public class FileUrlServiceImpl implements FileUrlService {

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * Created by ZHUKE on 2016/4/3.
+ * Created by GXX on 2016/4/3.
  */
 public class MyInvestDto {
     private String loanTitle;

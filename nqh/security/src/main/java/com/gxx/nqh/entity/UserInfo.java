@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * 用户信息
- * Created by ZHUKE on 2016/3/19.
+ * Created by GXX on 2016/3/19.
  */
 @Entity
 @Table(name = "user_info")

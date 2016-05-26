@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * 银行卡
- * Created by ZHUKE on 2016/3/20.
+ * Created by GXX on 2016/3/20.
  */
 @Entity
 @Table(name = "bank_card")

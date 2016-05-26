@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ZHUKE on 2016/3/27.
+ * Created by GXX on 2016/3/27.
  */
 @Service
 public class UserInfoServiceImpl implements UserInfoService {

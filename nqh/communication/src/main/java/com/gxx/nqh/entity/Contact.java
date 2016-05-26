@@ -1,6 +1,6 @@
 package com.gxx.nqh.entity;
 /**
- * Created by ZHUKE on 2016/4/4.
+ * Created by GXX on 2016/4/4.
  */
 public class Contact {
     private String phoneNumber;

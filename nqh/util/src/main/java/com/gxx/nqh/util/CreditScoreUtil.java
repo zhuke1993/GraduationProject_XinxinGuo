@@ -3,7 +3,7 @@ package com.gxx.nqh.util;
 /**
  * 根据分数得到相应的等级
  * 信用分数 0-50:A, 50-100:A+, 100+:S, -10-0:B, -50--10:C, -100--50:D, -100:E
- * Created by ZHUKE on 2016/5/20.
+ * Created by GXX on 2016/5/20.
  */
 public class CreditScoreUtil {
 

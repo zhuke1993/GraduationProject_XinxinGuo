@@ -27,7 +27,7 @@ public class MD5Util {
 
 
     public static void main(String args[]) throws NoSuchAlgorithmException {
-        System.out.println(new MD5Util().string2MD5("zhuke"));
-        System.out.println(new MD5Util().string2MD5("zhuke"));
+        System.out.println(new MD5Util().string2MD5("GXX"));
+        System.out.println(new MD5Util().string2MD5("GXX"));
     }
 }

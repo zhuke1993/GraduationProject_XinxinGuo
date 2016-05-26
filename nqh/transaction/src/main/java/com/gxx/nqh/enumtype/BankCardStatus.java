@@ -1,7 +1,7 @@
 package com.gxx.nqh.enumtype;
 
 /**
- * Created by ZHUKE on 2016/3/28.
+ * Created by GXX on 2016/3/28.
  */
 public enum BankCardStatus {
     BINDED("BINDED", "绑定"), CANCELED("CANCELED", "取消");

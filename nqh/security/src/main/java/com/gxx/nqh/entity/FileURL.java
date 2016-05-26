@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * 文件信息
- * Created by ZHUKE on 2016/3/20.
+ * Created by GXX on 2016/3/20.
  */
 @Entity
 @Table(name = "file_url")

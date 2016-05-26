@@ -3,7 +3,7 @@ package com.gxx.nqh.service;
 import com.gxx.nqh.entity.BankCard;
 
 /**
- * Created by ZHUKE on 2016/3/28.
+ * Created by GXX on 2016/3/28.
  */
 public interface BankCardService {
     /**

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ZHUKE on 2016/3/28.
+ * Created by GXX on 2016/3/28.
  */
 public interface AgreementService {
 

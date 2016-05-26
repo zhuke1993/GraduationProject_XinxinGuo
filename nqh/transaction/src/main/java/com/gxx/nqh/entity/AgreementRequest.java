@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * 合同请求
- * Created by ZHUKE on 2016/3/20.
+ * Created by GXX on 2016/3/20.
  */
 @Entity
 @Table(name = "agreement_request")

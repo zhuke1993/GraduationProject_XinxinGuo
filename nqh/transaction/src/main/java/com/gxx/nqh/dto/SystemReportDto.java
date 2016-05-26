@@ -1,7 +1,7 @@
 package com.gxx.nqh.dto;
 
 /**
- * Created by ZHUKE on 2016/4/10.
+ * Created by GXX on 2016/4/10.
  */
 public class SystemReportDto {
     private int totoal;

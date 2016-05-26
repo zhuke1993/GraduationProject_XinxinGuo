@@ -38,7 +38,7 @@ import java.util.List;
 
 /**
  * 借贷管理API
- * Created by ZHUKE on 2016/3/29.
+ * Created by GXX on 2016/3/29.
  */
 @Controller
 @RequestMapping("/transaction")

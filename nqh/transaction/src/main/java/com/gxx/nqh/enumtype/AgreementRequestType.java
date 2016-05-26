@@ -1,7 +1,7 @@
 package com.gxx.nqh.enumtype;
 
 /**
- * Created by ZHUKE on 2016/3/28.
+ * Created by GXX on 2016/3/28.
  */
 public enum AgreementRequestType {
     CREATEAGREEMENT("create_agreement"),

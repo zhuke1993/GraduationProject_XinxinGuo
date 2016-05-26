@@ -38,7 +38,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ZHUKE on 2016/3/28.
+ * Created by GXX on 2016/3/28.
  */
 @Controller
 @RequestMapping("/security")

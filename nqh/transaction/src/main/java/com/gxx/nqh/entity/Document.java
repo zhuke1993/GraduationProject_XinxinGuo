@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * 文档资源
- * Created by ZHUKE on 2016/3/27.
+ * Created by GXX on 2016/3/27.
  */
 public class Document {
     @Id

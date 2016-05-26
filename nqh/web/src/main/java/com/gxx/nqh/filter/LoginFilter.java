@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by ZHUKE on 2016/4/5.
+ * Created by GXX on 2016/4/5.
  */
 @Component
 public class LoginFilter implements Filter {

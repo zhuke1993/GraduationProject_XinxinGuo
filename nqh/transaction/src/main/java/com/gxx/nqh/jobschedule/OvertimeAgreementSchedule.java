@@ -18,7 +18,7 @@ import java.util.List;
  * 执行如下操作：
  * 1.如果余额充足，自动还款分发，发送通知
  * 2.余额不足，发送通知
- * Created by ZHUKE on 2016/4/9.
+ * Created by GXX on 2016/4/9.
  */
 public class OvertimeAgreementSchedule {
 

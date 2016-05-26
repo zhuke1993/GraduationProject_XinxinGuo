@@ -2,7 +2,7 @@ package com.gxx.nqh.enumtype;
 
 /**
  * 产生accountentry的原因
- * Created by ZHUKE on 2016/4/3.
+ * Created by GXX on 2016/4/3.
  */
 public enum AccountEntryType {
     INVEST("invest", "invest"), RECHARGE("recharge", "recharge"), WITHDRAW("withdraw", "withdraw"), REPAYMENT("repayment", "repaymet");

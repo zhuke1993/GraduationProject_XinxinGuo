@@ -3,7 +3,7 @@ package com.gxx.nqh.dto;
 import java.math.BigDecimal;
 
 /**
- * Created by ZHUKE on 2016/3/29.
+ * Created by GXX on 2016/3/29.
  */
 public class AgreementSummaryDto {
     private Long agreementId;

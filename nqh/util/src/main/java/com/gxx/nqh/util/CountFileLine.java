@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 /**
  * 统计代码行数
- * Created by ZHUKE on 2016/4/8.
+ * Created by GXX on 2016/4/8.
  */
 public class CountFileLine {
     public static void main(String[] args) throws IOException {

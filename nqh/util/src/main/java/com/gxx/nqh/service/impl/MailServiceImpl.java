@@ -17,7 +17,7 @@ import java.util.Properties;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * Created by ZHUKE on 2016/3/28.
+ * Created by GXX on 2016/3/28.
  */
 @Service
 @Scope(value = "prototype")

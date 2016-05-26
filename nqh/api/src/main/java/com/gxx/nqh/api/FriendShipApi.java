@@ -24,7 +24,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * Created by ZHUKE on 2016/4/4.
+ * Created by GXX on 2016/4/4.
  */
 @Controller
 @RequestMapping("/friendship")

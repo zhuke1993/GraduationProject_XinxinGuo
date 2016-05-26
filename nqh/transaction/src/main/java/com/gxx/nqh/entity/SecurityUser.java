@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * 后台管理用户
- * Created by ZHUKE on 2016/3/20.
+ * Created by GXX on 2016/3/20.
  */
 @Entity
 @Table(name = "security_user")

@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * Created by ZHUKE on 2016/3/27.
+ * Created by GXX on 2016/3/27.
  */
 @Service
 public class RegisterationServiceImpl implements RegisterationService {

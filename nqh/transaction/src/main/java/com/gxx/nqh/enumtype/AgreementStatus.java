@@ -1,7 +1,7 @@
 package com.gxx.nqh.enumtype;
 
 /**
- * Created by ZHUKE on 2016/3/28.
+ * Created by GXX on 2016/3/28.
  */
 public enum AgreementStatus {
     BEINGCREATED("创建中", "创建中"),

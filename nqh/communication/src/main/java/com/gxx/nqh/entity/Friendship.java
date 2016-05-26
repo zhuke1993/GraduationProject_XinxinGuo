@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * 好友关系
- * Created by ZHUKE on 2016/3/20.
+ * Created by GXX on 2016/3/20.
  */
 @Entity
 @Table(name = "frientship")

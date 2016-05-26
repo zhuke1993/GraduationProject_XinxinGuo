@@ -15,7 +15,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * Created by ZHUKE on 2016/3/29.
+ * Created by GXX on 2016/3/29.
  */
 @Service
 public class CommunicationServiceImpl implements CommunicationService, ApplicationContextAware {

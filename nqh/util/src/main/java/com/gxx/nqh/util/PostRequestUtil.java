@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
- * Created by ZHUKE on 2016/4/6.
+ * Created by GXX on 2016/4/6.
  */
 public class PostRequestUtil {
 
